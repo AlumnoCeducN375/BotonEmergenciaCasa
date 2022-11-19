@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosEmergencia"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDatosEmergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Datos Emergencia"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/txtNombreContacto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nombre Contacto 1"
+        />
+
+    <EditText
+        android:id="@+id/txtTelefContacto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefono Contacto 1"/>
+
+    <EditText
+        android:id="@+id/txtNombreContacto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nombre Contacto 2"/>
+
+    <EditText
+        android:id="@+id/txtTelefContacto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefono Contacto 2"/>
+
+    <EditText
+        android:id="@+id/txtNombreContacto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Nombre Contacto 3"/>
+
+    <EditText
+        android:id="@+id/txtTelefContacto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefono Contacto 3"/>
+
+    <Button
+        android:id="@+id/btnGuardarEmergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Guardar Contactos" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="volverAFormulario"
+        android:text="Volver" />
+
+</LinearLayout>
