@@ -19,6 +19,5 @@ public class MainActivity extends AppCompatActivity
     {
         Intent cambiarVentana1 = new Intent(this, Formulario.class);
         startActivity(cambiarVentana1);
-
     }
 }
