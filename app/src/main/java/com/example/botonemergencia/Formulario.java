@@ -36,6 +36,13 @@ public class Formulario extends AppCompatActivity
     }
     public void crearUsuario(View view)
     {
+        String usuarioAux = usuarioUsuario.getText().toString();
+
+        if(usuarioAux.isEmpty())
+        {
+            Toast.makeText(this, "Ingrese un Usuario", Toast.LENGTH_SHORT).show();
+        }
+
         ConexionBD baseDeDatosUsuario = new ConexionBD(this, "TablaDatosUsuario",null,1);
         SQLiteDatabase editableDB = baseDeDatosUsuario.getWritableDatabase();
         String usuarioImportante1= usuarioUsuario.getText().toString();
@@ -65,6 +72,12 @@ public class Formulario extends AppCompatActivity
         direccionUsuario.setText("");
         editableDB.close();
 
+
+
         Toast.makeText(this, "Usuario creado Correctamente", Toast.LENGTH_SHORT).show();
     }
+
+
+
+
 }

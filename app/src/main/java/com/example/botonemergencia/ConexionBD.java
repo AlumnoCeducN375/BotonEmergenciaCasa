@@ -17,7 +17,7 @@ public class ConexionBD extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        sqLiteDatabase.execSQL("create table datosUsuarios (usuario varchar(50) primary key not null, nombre varchar(50),apellido varchar(50),contraseña cvarchar(50), telefono varchar(50), email varchar(50),direccion varchar(50))");
+        sqLiteDatabase.execSQL("create table datosUsuarios (usuario varchar(50) primary key not null, nombre varchar(50),apellido varchar(50),contrasena cvarchar(50), telefono varchar(50), email varchar(50),direccion varchar(50))");
         sqLiteDatabase.execSQL("create table datosEmergencia(telefonoContacto1 varchar(50) primary key not null, nombreContacto1 varchar(50), telefonoContacto2 varchar(50) , nombreContacto2 varchar(50), telefonoContacto3 varchar(50) , nombreContacto3 varchar(50))");
     }
 

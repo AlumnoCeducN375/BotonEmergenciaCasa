@@ -13,13 +13,19 @@
         android:theme="@style/Theme.BotonEmergencia"
         tools:targetApi="31">
         <activity
+            android:name=".Bienvenida"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DatosEmergencia"
             android:exported="false"
             android:parentActivityName=".Formulario">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""
-                />
+                android:value="" />
         </activity>
         <activity
             android:name=".Formulario"

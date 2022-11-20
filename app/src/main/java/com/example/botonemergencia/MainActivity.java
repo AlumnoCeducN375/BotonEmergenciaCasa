@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity
         Intent cambiarVentana1 = new Intent(this, Formulario.class);
         startActivity(cambiarVentana1);
     }
+    public void cambiarBienvenida(View view)
+    {
+        Intent cambiarVentanaBienvenida = new Intent(this, Bienvenida.class);
+        startActivity(cambiarVentanaBienvenida);
+    }
 }

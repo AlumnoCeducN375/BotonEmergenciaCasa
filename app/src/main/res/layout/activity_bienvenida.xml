@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bienvenida">
+
+    <Button
+        android:id="@+id/ConsultarDatosUsuario"
+        android:layout_width="332dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="consultarUsuario"
+        android:text="Eliminar Datos Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminarDatosUsuario" />
+
+    <Button
+        android:id="@+id/btnEliminarDatosUsuario"
+        android:layout_width="332dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="130dp"
+        android:text="Eliminar Datos Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarDatosUsuario" />
+
+    <TextView
+        android:id="@+id/txtBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Bienvenid@"
+        android:textSize="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUsuarioBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="&quot;@Usuario&quot;"
+        android:textSize="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenida" />
+
+    <Button
+        android:id="@+id/btnModificarDatosUsuario"
+        android:layout_width="332dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
+        android:text="Modificar Datos Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/btnEliminarDatosUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayDireccion" />
+
+    <EditText
+        android:id="@+id/txtDisplayNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioBienvenida" />
+
+    <EditText
+        android:id="@+id/txtDisplayApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayNombre" />
+
+    <EditText
+        android:id="@+id/txtDisplayUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayApellido" />
+
+    <EditText
+        android:id="@+id/txtDisplayContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña?..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayUsuario" />
+
+    <EditText
+        android:id="@+id/txtDisplayTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefono...."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayContrasena" />
+
+    <EditText
+        android:id="@+id/txtDisplayEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayDireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayTelefono" />
+
+    <EditText
+        android:id="@+id/txtDisplayDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dirección..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
