@@ -46,6 +46,7 @@ public class Bienvenida extends AppCompatActivity {
                 direccion.setText(registro.getString(5));
                 telefono.setText(registro.getString(6));
                 editableDB.close();
+
             }
             else
             {
